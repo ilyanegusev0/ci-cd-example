@@ -23,6 +23,10 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
+      - name: Get pip cache directory
+        id: pip-cache
+        run: echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
