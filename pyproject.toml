@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ci-cd-example"
+version = "0.1.0"
+description = "Demo Python app for CI/CD pipeline"
+authors = [
+    { name = "ilyanegusev" }
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[tool.setuptools]
+py-modules = ["app"]
